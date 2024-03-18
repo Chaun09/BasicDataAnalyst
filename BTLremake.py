@@ -484,66 +484,66 @@ df_age18to44 = df_001 + df_002 + df_003 + df_004 + df_005 + df_006 + df_007 + df
 print('Age 18-44:', df_age18to44)
 
 
-# Input Data For Each  Bar Chart
-x1 = np.array([1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960])
-x2 = np.array([1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970])
-x3 = np.array([1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980])
-x4 = np.array([1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990])
-x5 = np.array([1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000])
-x6 = np.array([2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010])
-
-
-y1 = np.array([223, 135, 116, 124, 110, 105, 92, 99, 99, 92, 99])
-y2 = np.array([93, 113, 117, 111, 114, 111, 123, 151, 168, 171])
-y3 = np.array([217, 216, 214, 221, 235, 238, 295, 285, 279, 286])
-y4 = np.array([303, 314, 314, 309, 317, 322, 334, 331, 352, 380])
-y5 = np.array([386, 386, 390, 403, 406, 428, 441, 439, 440, 439])
-y6 = np.array([441, 440, 428, 442, 464, 458, 458, 450, 444, 442])
-
-
-
-# Vẽ biểu đồ cột lên từng trục
-plt.subplot(2, 3, 1)
-plt.bar(x1, y1, color='plum')
-plt.title('Chart Show Total of PLayer(1950-1960)', loc='left')
-plt.ylabel('Total of Player')
-for i in range(len(x1)):
-    plt.text(x1[i], y1[i], str(y1[i]), ha='center', va='top')
-
-plt.subplot(2, 3, 2)
-plt.bar(x2, y2, color='khaki')
-plt.title('Chart Show Total of PLayer(1961-1970)', loc='center')
-for i in range(len(x2)):
-    plt.text(x2[i], y2[i], str(y2[i]), ha='center', va='center')
-
-plt.subplot(2, 3, 3)
-plt.bar(x3, y3, color='pink')
-plt.title('Chart Show Total of PLayer(1971-1980)', loc='right')
-for i in range(len(x3)):
-    plt.text(x3[i], y3[i], str(y3[i]), ha='center', va='center')
-
-plt.subplot(2, 3, 4)
-plt.bar(x4, y4, color='linen')
-plt.title('Chart Show Total of PLayer(1981-1990)', loc='left')
-plt.xlabel('Year')
-plt.ylabel('Total of Player')
-for i in range(len(x4)):
-    plt.text(x4[i], y4[i], str(y4[i]), ha='center', va='center')
-
-plt.subplot(2, 3, 5)
-plt.bar(x5, y5, color='lightblue')
-plt.title('Chart Show Total of PLayer(1991-2000)', loc='center')
-plt.xlabel('Year')
-for i in range(len(x5)):
-    plt.text(x5[i], y5[i], str(y5[i]), ha='center', va='center')
-
-plt.subplot(2, 3, 6)
-plt.bar(x6, y6, color='orange')
-plt.title('Chart Show Total of PLayer(2001-2010)', loc='right')
-plt.xlabel('Year')
-plt.suptitle('Total of Player In Each Year(1950-2022)')
-for i in range(len(x5)):
-    plt.text(x6[i], y6[i], str(y6[i]), ha='center', va='center')
+# # Input Data For Each  Bar Chart
+# x1 = np.array([1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960])
+# x2 = np.array([1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970])
+# x3 = np.array([1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980])
+# x4 = np.array([1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990])
+# x5 = np.array([1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000])
+# x6 = np.array([2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010])
+#
+#
+# y1 = np.array([223, 135, 116, 124, 110, 105, 92, 99, 99, 92, 99])
+# y2 = np.array([93, 113, 117, 111, 114, 111, 123, 151, 168, 171])
+# y3 = np.array([217, 216, 214, 221, 235, 238, 295, 285, 279, 286])
+# y4 = np.array([303, 314, 314, 309, 317, 322, 334, 331, 352, 380])
+# y5 = np.array([386, 386, 390, 403, 406, 428, 441, 439, 440, 439])
+# y6 = np.array([441, 440, 428, 442, 464, 458, 458, 450, 444, 442])
+#
+#
+#
+# # Vẽ biểu đồ cột lên từng trục
+# plt.subplot(2, 3, 1)
+# plt.bar(x1, y1, color='plum')
+# plt.title('Chart Show Total of PLayer(1950-1960)', loc='left')
+# plt.ylabel('Total of Player')
+# for i in range(len(x1)):
+#     plt.text(x1[i], y1[i], str(y1[i]), ha='center', va='top')
+#
+# plt.subplot(2, 3, 2)
+# plt.bar(x2, y2, color='khaki')
+# plt.title('Chart Show Total of PLayer(1961-1970)', loc='center')
+# for i in range(len(x2)):
+#     plt.text(x2[i], y2[i], str(y2[i]), ha='center', va='center')
+#
+# plt.subplot(2, 3, 3)
+# plt.bar(x3, y3, color='pink')
+# plt.title('Chart Show Total of PLayer(1971-1980)', loc='right')
+# for i in range(len(x3)):
+#     plt.text(x3[i], y3[i], str(y3[i]), ha='center', va='center')
+#
+# plt.subplot(2, 3, 4)
+# plt.bar(x4, y4, color='linen')
+# plt.title('Chart Show Total of PLayer(1981-1990)', loc='left')
+# plt.xlabel('Year')
+# plt.ylabel('Total of Player')
+# for i in range(len(x4)):
+#     plt.text(x4[i], y4[i], str(y4[i]), ha='center', va='center')
+#
+# plt.subplot(2, 3, 5)
+# plt.bar(x5, y5, color='lightblue')
+# plt.title('Chart Show Total of PLayer(1991-2000)', loc='center')
+# plt.xlabel('Year')
+# for i in range(len(x5)):
+#     plt.text(x5[i], y5[i], str(y5[i]), ha='center', va='center')
+#
+# plt.subplot(2, 3, 6)
+# plt.bar(x6, y6, color='orange')
+# plt.title('Chart Show Total of PLayer(2001-2010)', loc='right')
+# plt.xlabel('Year')
+# plt.suptitle('Total of Player In Each Year(1950-2022)')
+# for i in range(len(x5)):
+#     plt.text(x6[i], y6[i], str(y6[i]), ha='center', va='center')
 
 
 
