@@ -1,4 +1,5 @@
 Total Of Player Played NBA Each 10 Years (1950-2022)
+Zo
 
 ![Figure_1](https://github.com/Chaun09/basicdataanalyst/assets/112841027/ac272a53-309c-454e-98ae-97cbeed5bfc0)
 
